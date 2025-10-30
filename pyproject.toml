@@ -1,0 +1,22 @@
+[project]
+name = "crawler"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Marcos Soares",email = "marcosjmsoares@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "selenium (>=4.38.0,<5.0.0)",
+    "beautifulsoup4 (>=4.14.2,<5.0.0)",
+    "pandas (>=2.3.3,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "crawler", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
