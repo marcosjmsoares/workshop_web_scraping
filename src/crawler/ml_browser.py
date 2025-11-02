@@ -26,7 +26,7 @@ class BrowserML:
 
         soup = BeautifulSoup(html, "html.parser")
 
-        results = soup.find_all("div", class_="ui-search-result")
+        results = soup.find_all("div", class_="ui-search-results")
         data = []
 
         for result in results:
