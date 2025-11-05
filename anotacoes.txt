@@ -7,3 +7,18 @@ aula 01
 --------------------------------------------------------------------
 
 aula 02
+
+minuto 10 = explicando sobre redis e mongodb
+
+minutos 13 = nova estrutura browser generic
+
+minuto 17 = explicação arquivo ip.py, usando proxy de outro país
+
+minuto 22 = diferença entre VPN, Proxy. VPN e uma sala privada, e Proxy como se fosse um corredor, tem várias 'pessoas' passando
+
+minuto 26 = criando arquivo browser_provider
+
+minuto 52 = explicando redis
+
+
+minuto 1:51:00 = rodando o codigo final usando redis e mongodb
