@@ -1,11 +1,16 @@
 from browser.generic_crawler import GenericBrowserCrawler
-from request.generic_crawler import GenericRequestCrawler
+from browser.crawlers.amazon_crawler import AmazonCrawler
+import time
 
-
+print("🔍 Scrapeando Mercado Livre...")
 ml = GenericBrowserCrawler("Ml").crawl('Nintendo Switch')
-az = GenericBrowserCrawler("Amazon").crawl('Playstation')
+print("✅ Mercado Livre concluído!")
 
-ml2 = GenericRequestCrawler("Ml").crawl('Xbox')
-az2 = GenericRequestCrawler("Amazon").crawl('Sega')
+print("\n⏳ Aguardando 10 segundos...")
+time.sleep(10)
 
-print(az2)
+print("🔍 Scrapeando Amazon...")
+amazon = AmazonCrawler().crawl('Sega')
+print("✅ Amazon concluído!")
+
+print("\n✨ Scraping finalizado!")

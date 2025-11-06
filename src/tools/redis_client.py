@@ -14,15 +14,15 @@ class RedisClient:
     @staticmethod
     def _load_config():
         return {
-            "host": os.getenv("REDIS_HOST","localhost"),
-            "port": os.getenv("REDIS_PORT",6379),
+            "host": os.getenv("REDIS_HOST", "localhost"),
+            "port": os.getenv("REDIS_PORT", 6379),
             "decode_responses": True
         }
 
     @classmethod
     def _connect_to_redis(cls):
         config = cls._load_config()
-        redis_client = redis.StrictRedis(**config)
+        redis_client = redis.Redis(**config)  # ← R MAIÚSCULO
         return redis_client
 
     @classmethod
