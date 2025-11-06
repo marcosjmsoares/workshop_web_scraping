@@ -33,8 +33,9 @@ Web Scraping é a técnica de extrair dados de websites. Este processo envolve f
 
 ### Passos
 - Importe o repositório
-- Instale as dependências (poetry, python, bibliotecas)
+- Instale as dependências (poetry, python, bibliotecas, docker desktop)
 - Crie o docker compose
 - Acesse a pasta crawler/src e execute o arquivo start.py
 
+### Repositório Estudo
 - Repositório utilizado no Workshop: https://github.com/lvgalvao/data-engineering-roadmap/tree/main/05-redis-mongodb-esse-tal-de-nosql
